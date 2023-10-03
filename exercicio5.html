@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio5</title>
+    <style>
+            html{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            font-family: Calibri;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+        }
+        #menu{
+            display:flex;
+            flex: 1 70px;
+            width: 100vw;
+            border-bottom: 1px solid #aaa;
+            box-sizing: border-box;
+        }
+        #texto-titulo{
+            font-size: 60px;
+        }
+        #corpo{
+            flex: 100;
+            display: flex;
+            width: 100vw;
+            background-color: #444;
+            align-items: center;
+            justify-content: center;
+        }   
+        #rodape{
+            display: flex;
+            flex: 2 80px;
+            width: 100vw;
+            border-top: 1px solid #aaa;
+            box-sizing: border-box;
+            justify-content: space-around;
+            align-items: flex-end; 
+        }
+        #avatar{
+            display: flex;
+            margin-left: 84vw;
+            align-items: center;
+        }
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;          
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 400px;
+            padding: 15px;
+            color: #fff;
+        }
+        fieldset > div{
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+        label{
+            font-size: 14px;
+        }
+        input{
+            font-size: 16px;
+            font-weight: bold;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #555;
+        }
+        .botao{
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 5px;
+            background-color: #1e90ff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <img src="imagens/css.png" alt="" width="60" height="60px">
+        <div id="texto-titulo">CSS3</div>
+        <div id="avatar">
+            <div>Bill Gates</div>
+            <img src="imagens/avatar.jpg" alt="" width="42px" height="42px">
+        </div>
+    </div>
+    <div id="corpo">
+        <form>
+            <fieldset>            
+            <legend>Login</legend>            
+            <div>            
+            <label>e-mail</label>            
+            <input type="email" name="mail" />            
+            </div>            
+            <div>           
+            <label>Senha</label>            
+            <input type="password" name="senha" />            
+            </div>            
+            <div>            
+            <input type="submit" value="Enviar" class="botao" />            
+            <input type="reset" value="Limpar" class="botao" />
+            </div>
+            </fieldset>    
+        </form>   
+    </div>
+    </div>
+    <div id="rodape">
+        <img src="imagens/Fatec.png" alt="" width="87px" height="41px">
+        <img src="imagens/CPS.png" alt="" width="85px" height="56px">
+        <img src="imagens/Brasao.png" alt="" width="81px" height="54px">
+    </div>  
+</body>
+</html>

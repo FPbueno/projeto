@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exercício 7</title>
+    <style>
+        html {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            font-family: calibri;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            margin: 0; /* Remova as margens padrão do corpo */
+        }
+
+        #menu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 70px;
+            width: 100%;
+            border-bottom: 1px solid #aaa;
+            box-sizing: border-box;
+            justify-content: space-between;
+        }
+
+        #titulo {
+            display: flex;
+            align-items: center;
+        }
+
+        #avatar {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        #nome {
+            margin-right: 10px;
+        }
+
+        #texto-titulo {
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        #corpo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1; /* Ocupa o espaço restante verticalmente */
+            width: 100%;
+        }
+
+        #rodape {
+            display: flex;
+            height: 80px;
+            width: 100%;
+            border-top: 1px solid #aaa;
+            box-sizing: border-box;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        fieldset {
+            display: inline;
+            color: white;
+        }
+
+        label, input, .botao {
+            display: block;
+        }
+
+        .botao {
+            background-color: #1E90FF;
+            color: white;
+            border: none;
+            margin-top: 3px;
+            margin-left: 3px;
+        }
+
+        .bot {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        #esquerda {
+            flex: 1;
+            background-color: yellow;
+            width: 200px;
+            height: 100%; /* Defina uma altura para a div #esquerda */
+        }
+        #direita{
+            flex:2;
+            background-color: #00FFFF;
+            width: 100%;
+            height: 100%; 
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <div id="titulo">
+            <img src="./imagens/css.png" alt="" width="60" height="60" />
+            <div id="texto-titulo">CSS3</div>
+        </div>
+        <div id="avatar">
+            <div id="nome">Bill Gates</div>
+            <img src="./imagens/avatar.jpg" alt="" width="42" height="42" />
+        </div>
+    </div>
+    <div id="corpo">
+        <div id="esquerda">
+            <!-- Conteúdo da div #esquerda -->
+        </div>
+        <div id="direita">
+            <!-- Conteúdo da div #direita -->
+        </div>
+    </div>
+    <div id="rodape">
+        <img src="./imagens/Fatec.png" alt="logo" width="87" height="41" />
+        <img src="./imagens/CPS.png" alt="logo" width="85" height="56" />
+        <img src="./imagens/Brasao.png" alt="logo" width="81" height="54" />
+    </div>
+</body>
+
+</html>
